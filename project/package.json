@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.2",
+    "nib": "^1.1.2",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "start-css": "stylus -w -m -I node_modules/nib/lib src/styles/main.styl -o src",
+    "build-css": "stylus -m -I node_modules/nib/lib src/styles/main.styl -o src",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "start": "npm-run-all -p start-css start-js",
+    "build": "npm-run-all build-css build-js",
+    "server": "nodemon server.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
