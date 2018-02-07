@@ -1,0 +1,9 @@
+.App {
+  background-color: #9b9b9b;
+}
+@media only screen and (max-width: 600px) {
+  .App {
+    background-color: #ccc;
+  }
+}
+/*# sourceMappingURL=main.css.map */
