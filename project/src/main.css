@@ -1,9 +1,12 @@
 .App {
-  background-color: #9b9b9b;
+  margin: 0 20px;
 }
 @media only screen and (max-width: 600px) {
   .App {
-    background-color: #ccc;
+    background-color: #d2e8d3;
   }
+}
+body {
+  background-color: #87bba2;
 }
 /*# sourceMappingURL=main.css.map */
