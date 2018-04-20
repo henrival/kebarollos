@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 /*import logo from './logo.svg';*/
+import Header from './Components/Header.js';
+import Page from './Components/Page';
 import './main.css';
 
 class App extends Component {
@@ -25,33 +27,14 @@ class App extends Component {
   };
 
   render() {
-
-  const isMobile = this.state.width <= 600;
-  const isTablet = this.state.width <= 800;
-
-  if (isMobile) {
-    return (
+    console.log(this)
+  return(
       <div className="App">
-        <h1>Mobile</h1>
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
-      </div>
+        <Header width={this.state.width} />
+        <Page />
+        </div>
     );
   }
-  if (isTablet) {
-    return (
-      <div className="App">
-        <h1>Tablet</h1>
-      </div>
-    );
-  }
-  else {
-    return (
-      <div className="App">
-        <h1>Desktop</h1>
-      </div>
-    );
-  }
-}
 }
 
 export default App;
